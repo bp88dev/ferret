@@ -197,5 +197,3 @@ def tiktokpng():
 @app.route("/load.gif/")
 def ferretload():
     return flask.send_file(theme["loading"])
-
-app.run(host="0.0.0.0", port=2121, debug=True)

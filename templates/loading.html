@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Ferret</title>
+        <link href="/global.css" rel="stylesheet"></style>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script>
+            window.onload = function() {
+                window.location.href = "{{ url|safe }}"
+                // Seasonal Code
+                christmasOverlaySnow.enable(zIndex=0);
+            }
+        </script>
+
+        <!-- Seasonal Code -->
+        <script src="https://dadevmikey.github.io/The-Holiday-Library/ChristmasOverlay.js"></script>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <center>
+                <img src="/load.gif" height="100px">
+                <h1>Loading...</h1>
+                {{ text|safe }}
+            </center>
+        </div>
+        <div class="footer">
+            <center>
+                App made by Benji for team 6045<br>{{ verstring }}
+            </center>
+        </div>
+    </body>
+</html>

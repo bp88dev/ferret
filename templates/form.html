@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Ferret</title>
+        <link href="/global.css" rel="stylesheet"></style>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>function submit() {
+            {{ questionJS|safe }};
+        }</script>
+
+        <!-- Seasonal Code -->
+        <script src="https://dadevmikey.github.io/The-Holiday-Library/ChristmasOverlay.js"></script>
+        <script>window.onload = function() { christmasOverlaySnow.enable(zIndex=0); }</script>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <center>
+                <div class="form">
+                    <img src="/teamlogo.jpg" height="100px">
+                    <h1>{{ teamname }}</h1>
+                    Scouting form
+                    <br>
+                    <hr>
+                    <br>
+                    {{ form|safe }}
+                    <button lass="button" onclick="submit()">Submit</button>
+                </div>
+            </center>
+        </div>
+        <div class="footer">
+            <center>
+                Form powered by Ferret
+                <br>
+                App made by Benji for team 6045<br>{{ verstring }}
+            </center>
+        </div>
+    </body>
+</html>

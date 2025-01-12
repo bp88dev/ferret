@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Ferret</title>
+        <link href="/global.css" rel="stylesheet"></style>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <!-- Seasonal Code -->
+        <script src="https://dadevmikey.github.io/The-Holiday-Library/ChristmasOverlay.js"></script>
+        <script>window.onload = function() { christmasOverlaySnow.enable(zIndex=0); }</script>
+    </head>
+    <body class="noScroll">
+        <div class="sidebar">
+            <center>
+                <div class="sidebarContainer">
+                    <img src="/logo.png" height=100px>
+                    <h1>Ferret</h1>
+                    <hr>
+                    <br>
+                    <a href="/"><buttn>Home</buttn></a>
+                    <br>
+                    <br>
+                    <buttn>General</buttn>
+                    <br>
+                    <br>
+                    <a href="/teams/?load=y"><buttn>Per-team</buttn></a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </center>
+        </div>
+        <div class="analytics scroll">
+                <div class="analyticsContainer">
+                    <h1 class="coloredText">Welcome back.</h1>
+                    {{ compliment }}
+                    <br><br><br>
+                    <center>
+                        <a href="/teams/?team={{ firstTeamNumber }}" style='text-decoration: none;'>
+                            <div class="bestTeam">
+                                <h3>BEST TEAM</h3>
+                                <hr>
+                                <h1>{{ firstTeamNumber}}</h1>
+                                {{ firstTeamName }}
+                            </div>
+                        </a>
+                        <br>
+                        <div class="secondTeamContainer">
+                            <a href="/teams/?team={{ secondTeamNumber }}" style='text-decoration: none;'>
+                                <span class="secondTeam">
+                                    <h3>2ND TEAM</h3>
+                                    <hr>
+                                    <h1>{{ secondTeamNumber }}</h1>
+                                    {{ secondTeamName }}
+                                </span>
+                            </a>
+                            <a href="/teams/?team={{ thirdTeamNumber }}" style='text-decoration: none;'>
+                                <span class="thirdTeam">
+                                    <h3>3RD TEAM</h3>
+                                    <hr>
+                                    <h1>{{ thirdTeamNumber }}</h1>
+                                    {{ thirdTeamName }}
+                                </span>
+                            </a>
+                        </div>
+                    </center>
+                </div>
+        </div>
+        <div class="footer">
+            <center>
+                App made by Benji for team 6045<br>{{ verstring }}
+            </center>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Ferret</title>
+        <link href="/global.css" rel="stylesheet"></style>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <!-- Seasonal Code -->
+        <script src="https://dadevmikey.github.io/The-Holiday-Library/ChristmasOverlay.js"></script>
+        <script>window.onload = function() { christmasOverlaySnow.enable(zIndex=0); }</script>
+    </head>
+    <body class="noScroll">
+        <div class="sidebar">
+            <center>
+                <div class="sidebarContainer">
+                    <img src="/logo.png" height=100px>
+                    <h1>Ferret</h1>
+                    <hr>
+                    <br>
+                    <a href="/"><buttn>Home</buttn></a>
+                    <br>
+                    <br>
+                    <a href="/analytics/?load=y"><buttn>General</buttn></a>
+                    <br>
+                    <br>
+                    <buttn>Per-team</buttn>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </center>
+        </div>
+        <div class="analytics scroll">
+                <div class="analyticsContainer">
+                    <h1 class="coloredText">Per-team analytics</h1>
+                    <br><br><br>
+                    <center>
+                        <div class="buttonContainer" style="border-radius: 10px;">
+                                {{ buttonCode|safe }}
+                        </div>
+                        <br><hr><br>
+                    </center>
+                    <h1>{{ teamNumber }}</h1>
+                    {{ teamName }}
+                    <center>
+                        {{ questionCode|safe }}
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </center>
+                </div>
+        </div>
+        <div class="footer">
+            <center>
+                App made by Benji for team 6045<br>{{ verstring }}
+            </center>
+        </div>
+    </body>
+</html>

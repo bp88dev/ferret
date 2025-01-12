@@ -1,0 +1,4 @@
+pip install flask google-generativeai
+python -m pip install flask google-generativeai
+python3 -m pip install flask google-generativeai
+py -m pip install flask google-generativeai

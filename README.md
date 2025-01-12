@@ -4,7 +4,7 @@ An FRC scouting tool powered by AI to help you find teams to pair up with.
 ## Setup instructions (As per !howToSetup.txt)
 STEP 1: Go to https://aistudio.google.com/apikey and get an API key
 
-STEP 2: Paste the API key inside of the quotation marks
+STEP 2: Paste the API key inside of the quotation marks in creds.py
 
 STEP 3: Go to !importcommands.txt and see which one works
 

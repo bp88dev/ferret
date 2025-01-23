@@ -10,7 +10,7 @@ STEP 3: Go to !importcommands.txt and see which one works
 
 STEP 4: Run the command that works
 
-STEP 5: Open the Feret folder in terminal
+STEP 5: Open the Ferret folder in terminal
 
 STEP 6: Go to !runcommands.txt and see which one works
 
